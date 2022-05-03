@@ -4,7 +4,7 @@ At this repository you can see all files of our documentation. Look at our branc
 
 On our robot we have 2 files that work at the same time. 
 
-File main.py is launched on pyboard, it get's the data from raspberry and controls servo drive and motor. 
+File ``main.py`` is launched on pyboard, it get's the data from raspberry and controls servo drive and motor. 
 
 ``Final.py``(for final attempts) or ``Kvalification.py``(for qualification) is launched on raspberry, it receives the image from camera, processes it, and sends data to pyboard.
 
