@@ -27,8 +27,8 @@ File main.py is launched on pyboard, it get's the data from raspberry and contro
 
 To put the programs to pyboard, you need to just connect pyboard to your computer, and it will open as a USB flash drive, then copy files ``main.py`` and ``module.py``, wait for red LED to turn off, and thats it, all done.
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/b83ab2642b691f070a6a2ed29670b6094b4c30cf/readme_photos/pyboard_1.png)
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/b83ab2642b691f070a6a2ed29670b6094b4c30cf/readme_photos/pyboard_2.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/pyboard_1.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/pyboard_2.png)
 
 ## Connection to raspberry
 
