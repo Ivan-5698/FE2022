@@ -47,7 +47,7 @@ Mac users, you can use the disk utility that’s already on your machine.
 Linux people, Etcher – which also works on Mac and Windows – is what the Raspberry Pi Foundation recommends.
 The process of actually writing the image will be slightly different across these programs, but it’s pretty self-explanatory no matter what you’re using. Each of these programs will have you select the destination (make sure you’ve picked your microSD card!) and the disc image (the unzipped Raspbian file). Choose, double-check, and then hit the button to write.
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/98ea62df5dd35c2d285455a4992937db45a9d991/readme_photos/win32-disk-imager-raspbian.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/win32-disk-imager-raspbian.png)
 
 Once the disc image has been written to the microSD card, you’re ready to go! Put that sucker into your Rasberry Pi, plug in the peripherals and power source, and enjoy. The current edition to Raspbian will boot directly to the desktop.(guide: https://thepi.io/how-to-install-raspbian-on-the-raspberry-pi/)
 
@@ -58,21 +58,21 @@ Connect your raspberri to pc using ethernet cable, with hdmi to the monitor, and
 
 4)Then use command "sudo nano /boot/config.txt", with it, you will be able to edit file "config.txt"
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/1e1554d7852441496e2f9f1a4b7d2ac0988bd82f/readme_photos/boot_txt_1.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/boot_txt_1.png)
 
 go to the bottom and add "enable_uart=1"
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/1e1554d7852441496e2f9f1a4b7d2ac0988bd82f/readme_photos/boot_2.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/boot_2.png)
 
 5) Also you need to get raspberry's ip ethernet adress, so use command "ifconfig". There you'll see your ip adrress. Write it down somewhere, we'll need it later.
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/72c6972e81f78c73bc5a16d1ddeb7530171776b4/readme_photos/ifconfig_1.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/ifconfig_1.png)
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/72c6972e81f78c73bc5a16d1ddeb7530171776b4/readme_photos/ifconfig_2.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/ifconfig_2.png)
 
 6) Now use command crontab -e
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/cf567818c8cc6dc724ac27561e6937ea52fa7c6a/readme_photos/crontab.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/crontab.png)
 
 Aт editor lie nano will appear, paste this strings inside it
 
@@ -84,46 +84,46 @@ for qualification:
 
 @reboot sudo python /home/pi/robot/qualification.py
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/cb378b4d5c5283145f090b83d9829e6220d2b0e9/readme_photos/crontab_1.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/crontab_1.png)
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/12ff5a6c5ec3b69a9ee917aa6782fbf747240f68/readme_photos/crontab_2.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/crontab_2.png)
 
 7) And finally we need to enable ssh on our raspberry. Use command "sudo raspi-config".
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/1e1554d7852441496e2f9f1a4b7d2ac0988bd82f/readme_photos/ssh_1.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/ssh_1.png)
 
 You'll see a menu, go to 5'th point "Interfacing Options", press enter
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/abfd8e45297dbf68f70f8a7d682ced6558985106/readme_photos/raspi-config-interfacing-options.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/raspi-config-interfacing-options.png)
 
 Choose point 2 "SSH"
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/abfd8e45297dbf68f70f8a7d682ced6558985106/readme_photos/raspi-config-ssh.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/raspi-config-ssh.png)
 
 Select "Yes", and hit enter 2 times, then Esc
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/1e1554d7852441496e2f9f1a4b7d2ac0988bd82f/readme_photos/ssh_2.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/readme_photos/ssh_2.png)
 
 And we are done for now with hdmi cable, so disconnect it.
 
 8) Now we can use raspberry only using ethernet, by ssh, but first you need to download bitvise ssh(https://www.bitvise.com/ssh-client-download).
 9) After you are done with bitvise, open it. You'll see a menu, where you need to put ip address, written down by you earlier in field "host", 22 in field, login goest to username field(pi by default), and password to password. Hit log in, wait for a second, accept Host key
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/1e1554d7852441496e2f9f1a4b7d2ac0988bd82f/readme_photos/bitvise_1.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/readme_photos/bitvise_1.png)
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/1e1554d7852441496e2f9f1a4b7d2ac0988bd82f/readme_photos/bitvise_2.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/readme_photos/bitvise_2.png)
 
 The window will chage a bit. Now open new sftp window.
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/1e1554d7852441496e2f9f1a4b7d2ac0988bd82f/readme_photos/bitvise_3.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/readme_photos/bitvise_3.png)
 
 It wll open a window, like a simple explorer. Now click with right mouse button at the area of remote files.
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/1e1554d7852441496e2f9f1a4b7d2ac0988bd82f/readme_photos/files_1.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/files_1.png)
 
 Create new folder, named "robot".
 
-![alt text](https://github.com/Riardon/WRO-LittleRobot/blob/1e1554d7852441496e2f9f1a4b7d2ac0988bd82f/readme_photos/files_2.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/files_2.png)
 
 Now go into it, and drag your files: ``RobotAPI.py`` and ``qualification.py`` or ``final.py``
 
