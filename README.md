@@ -102,20 +102,20 @@ Choose point 2 "SSH"
 
 Select "Yes", and hit enter 2 times, then Esc
 
-![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/readme_photos/ssh_2.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/ssh_2.png)
 
 And we are done for now with hdmi cable, so disconnect it.
 
 8) Now we can use raspberry only using ethernet, by ssh, but first you need to download bitvise ssh(https://www.bitvise.com/ssh-client-download).
 9) After you are done with bitvise, open it. You'll see a menu, where you need to put ip address, written down by you earlier in field "host", 22 in field, login goest to username field(pi by default), and password to password. Hit log in, wait for a second, accept Host key
 
-![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/readme_photos/bitvise_1.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/bitvise_1.png)
 
-![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/readme_photos/bitvise_2.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/bitvise_2.png)
 
 The window will chage a bit. Now open new sftp window.
 
-![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/readme_photos/bitvise_3.png)
+![alt text](https://github.com/Ivan-5698/FE2022/blob/main/readme_photos/bitvise_3.png)
 
 It wll open a window, like a simple explorer. Now click with right mouse button at the area of remote files.
 
